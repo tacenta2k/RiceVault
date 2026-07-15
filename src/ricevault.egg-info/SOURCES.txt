@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/ricevault/__init__.py
+src/ricevault/backup.py
+src/ricevault/cli.py
+src/ricevault/collector.py
+src/ricevault/config.py
+src/ricevault/manifest.py
+src/ricevault/restore.py
+src/ricevault/utils.py
+src/ricevault.egg-info/PKG-INFO
+src/ricevault.egg-info/SOURCES.txt
+src/ricevault.egg-info/dependency_links.txt
+src/ricevault.egg-info/entry_points.txt
+src/ricevault.egg-info/requires.txt
+src/ricevault.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ricevault"
+version = "1.0.0"
+description = "A KDE Plasma Rice Manager - Git for your desktop configurations."
+authors = [{ name = "Tacenta" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "questionary>=2.0.0"
+]
+
+[project.scripts]
+rice = "ricevault.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

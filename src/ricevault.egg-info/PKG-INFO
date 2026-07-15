@@ -1,0 +1,255 @@
+Metadata-Version: 2.4
+Name: ricevault
+Version: 1.0.0
+Summary: A KDE Plasma Rice Manager - Git for your desktop configurations.
+Author: Tacenta
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.12.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: questionary>=2.0.0
+
+<div align="center">
+
+# 🍚 RiceVault
+
+### Git for your KDE Plasma desktop configurations
+
+*A failsafe backup & restore manager for KDE Plasma ricing.*
+
+![Platform](https://img.shields.io/badge/Platform-KDE%20Plasma%206-blue)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
+
+---
+
+## 📖 Overview
+
+**RiceVault** is a strict, failsafe CLI manager designed specifically for **KDE Plasma 6** desktop customization.
+
+Unlike **Timeshift**, **Btrfs snapshots**, or traditional backup tools, RiceVault focuses exclusively on your **desktop appearance**—allowing you to save, switch, and restore your "rice" without worrying about corrupting your current setup.
+
+Whether you're an r/unixporn enthusiast or someone who enjoys experimenting with Plasma themes, RiceVault provides a safe way to manage your desktop configurations.
+
+---
+
+## ⚠️ The Golden Rule
+
+> **RiceVault will never overwrite your current configuration without first creating an automatic Emergency Backup.**
+
+If anything goes wrong after restoring a profile, you can always return to the exact state your desktop was in just moments before.
+
+---
+
+# ✨ Features
+
+## 🖥 Interactive CLI
+
+Built using **Typer** and **Questionary**, providing an intuitive wizard-driven experience.
+
+---
+
+## 📦 Smart Collection
+
+Automatically collects important desktop components, including:
+
+- `kdeglobals`
+- `kwinrc`
+- Plasma Panels
+- Widgets
+- Keyboard shortcuts
+- Kvantum themes
+- Wallpapers
+- Custom desktop assets
+
+---
+
+## 🛡 Automatic Emergency Backups
+
+Every restore operation creates a timestamped emergency snapshot before changing anything.
+
+Example:
+
+```text
+Emergency-2026-07-15_16-20-52
+```
+
+No blind overwrites.
+
+No accidental loss.
+
+---
+
+## 🗂 Isolated Vault
+
+Everything is stored inside
+
+```text
+~/RiceVault
+```
+
+making it easy to:
+
+- Sync with Git
+- Upload to Google Drive
+- Copy to external drives
+- Share between computers
+
+---
+
+## 🖼 Desktop Preview
+
+Automatically captures screenshots using **Spectacle** so you can visually identify your backups before restoring them.
+
+---
+
+# 📂 Project Structure
+
+```text
+~/RiceVault
+│
+├── Backup-2026-07-15_16-20-52
+│   ├── config/
+│   ├── themes/
+│   ├── wallpaper/
+│   ├── metadata.json
+│   └── preview.png
+│
+├── Backup-2026-07-18_20-30-01
+│
+└── Emergency-2026-07-20_09-10-11
+```
+
+---
+
+# ✅ Compatibility
+
+| Component | Status |
+|-----------|--------|
+| KDE Plasma 6 | ✅ Fully Supported |
+| KDE Plasma 5 | ⚠️ Best Effort |
+| Arch Linux | ✅ Tested |
+| CachyOS | ✅ Tested |
+| Garuda Linux | ✅ Tested |
+| Fedora KDE | ✅ Supported |
+| openSUSE KDE | ✅ Supported |
+
+---
+
+# 🚀 Installation
+
+The recommended installation method is **pipx**, which keeps RiceVault isolated from your system Python packages.
+
+## 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/TacentaXT/RiceVault.git
+cd RiceVault
+```
+
+## 2️⃣ Install using pipx
+
+```bash
+pipx install .
+```
+
+### Arch Linux
+
+```bash
+sudo pacman -S python-pipx
+```
+
+---
+
+# 💻 Usage
+
+Backup your current desktop:
+
+```bash
+rice backup
+```
+
+Restore a saved configuration:
+
+```bash
+rice restore
+```
+
+List all saved backups:
+
+```bash
+rice list
+```
+
+Delete a backup safely:
+
+```bash
+rice delete
+```
+
+Show project information:
+
+```bash
+rice info
+```
+
+---
+
+# 📁 Where is my data?
+
+All backups are stored inside:
+
+```text
+~/RiceVault
+```
+
+Each backup contains:
+
+- KDE configuration files
+- Plasma settings
+- Theme assets
+- Wallpapers
+- Preview image
+- Metadata
+- Plasma version information
+
+---
+
+# 🎯 Why RiceVault?
+
+Traditional backup tools save **everything**.
+
+RiceVault saves **only what matters for your desktop customization**.
+
+It is designed to make switching between different desktop setups quick, reliable, and completely safe.
+
+---
+
+# 🛠 Built With
+
+- Python
+- Typer
+- Questionary
+- Rich
+- Spectacle
+- KDE Plasma
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for details.
+
+---
+
+<div align="center">
+
+### ⭐ If RiceVault helps you preserve your perfect rice, consider giving the project a star.
+
+Made with ❤️ by **TacentaXT**
+
+</div>
