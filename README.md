@@ -9,7 +9,7 @@
 
 RiceVault is a sleek, Git-like CLI tool that lets you backup, swap, and manage your KDE Plasma configurations ("rices") in seconds. Never lose your perfect desktop setup again.
 
-<img src="https://raw.githubusercontent.com/TacentaXT/RiceVault/main/media/screenshots/hero.png" alt="RiceVault Hero" width="800">
+<img src="https://raw.githubusercontent.com/tacenta2k/RiceVault/main/media/screenshots/hero.png" alt="RiceVault Hero" width="800">
 
 </div>
 
@@ -49,14 +49,14 @@ pipx install .
 Run `rice backup` to launch the interactive wizard. It will securely copy your `kdeglobals`, `kwinrc`, and `plasmashellrc` into a secure vault in your Documents folder.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TacentaXT/RiceVault/main/media/gifs/backup.gif" alt="RiceVault Backup Demo" width="700">
+  <img src="https://raw.githubusercontent.com/tacenta2k/RiceVault/main/media/gifs/backup.gif" alt="RiceVault Backup Demo" width="700">
 </div>
 
 ### 2. Restoring a Theme
 Want to switch back to a previous setup? Run `rice restore`, select your profile, and watch your desktop transform back instantly. 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TacentaXT/RiceVault/main/media/gifs/restore.gif" alt="RiceVault Restore Demo" width="700">
+  <img src="https://raw.githubusercontent.com/tacenta2k/RiceVault/main/media/gifs/restore.gif" alt="RiceVault Restore Demo" width="700">
 </div>
 
 ### 3. Managing the Vault
